@@ -1,0 +1,11 @@
+<svg version="1.2" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 30 30" width="30" height="30">
+	<title>menu-ico-svg</title>
+	<defs>
+		<image  width="25" height="19" id="img1" href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABkAAAATAQMAAABfvDRGAAAAAXNSR0IB2cksfwAAAAZQTFRFAAAAAAAApWe5zwAAAAJ0Uk5TAP9bkSK1AAAAFUlEQVR4nGNgAIH6//8bIAR+QLI6ACdZEe9c/122AAAAAElFTkSuQmCC"/>
+		<image  width="25" height="18" id="img2" href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABkAAAASBAMAAABcAGiTAAAAAXNSR0IB2cksfwAAAC1QTFRFAAAA2tzp5Obz4ePw4OLv5Ob05ef12dvo5uj25+n35uj24uTx3+Hu5Ob05ef1L4wdGgAAAA90Uk5TAP////////j+///+//7+n5/6uQAAAEpJREFUeJxjYFR2cXYxcTZ2NjYJK2DgmAkGK4F41gYGWgCembNWZU5bOfMo0IoFDMwzZ06bCQUXaGIfK8z4WbOA9vHBeNPSZh4AAIFUJ4i6XkYJAAAAAElFTkSuQmCC"/>
+	</defs>
+	<style>
+	</style>
+	<use id="Layer" style="opacity: .5" href="#img1" x="2" y="5"/>
+	<use id="Capa 1" href="#img2" x="2" y="6"/>
+</svg>
