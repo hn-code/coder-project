@@ -1,0 +1,706 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: "roboto", sans-serif;
+    color: azure;
+    font-size: 10px;
+    list-style: none;
+}
+
+body {
+    background: linear-gradient(90deg, rgb(4, 25, 83) 0%, rgba(56,88,177,1) 50%, rgba(4,25,83,1) 100%);
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+.logoResp {
+    display: none;
+}
+
+.nbHeader {
+    height: 20vh;
+    width: 100%;
+    background-color: rgb(21, 36, 83) !important;
+    border-bottom: 2px solid azure;
+    position: fixed;
+    z-index: 5;
+}
+
+.nbContainer {
+    height: 100%;
+    padding: 0px;
+}
+
+.nbCollapse {
+   justify-content: center; 
+}
+
+.nbBrand {
+    height: 100%;
+    margin: 0px;
+    margin-left: 10vw;
+}
+
+.nbBrand img {
+    height: 100%;
+}
+
+.nbUl {
+    margin-left: 2vw;
+}
+
+.nbUl li {
+    padding: 0vh 2vw;
+}
+
+.nbUl li a{
+    color: azure;
+    text-decoration: none;
+    padding: 2vh 2vw;
+    border-radius: 10px;
+    font-size: 2.3rem;
+    text-shadow: 0 0 10px black;
+    transition-property: background-color, font-size;
+    transition-duration: 0.3s;
+}
+
+.nbUl li a:hover {
+    color: azure;
+    font-size: 2.5rem;
+    background-color: rgba(255, 255, 255, 0.4);
+}
+
+.nbButton {
+    margin: 0px;
+    padding: 0px;
+    height: 50px;
+    width: 50px;
+}
+
+.nbButton img {
+    width: 50px;
+    height: 50px;
+}
+
+.nbSearch {
+    height: 40px;
+    min-width: 250px;
+}
+
+.nbSearch input, .nbSearch button{
+    font-size: 2rem;
+}
+
+main {
+    padding-top: 25vh;
+}
+
+.mainDivInicio {
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    
+}
+
+.listaProductos {
+    grid-column: 1/2;
+    display: inline-block;
+    height: 100%;
+    text-align: center;
+}
+
+.listaProductos ul {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: auto;
+    padding: 0%;
+    width: 15vw;
+}
+
+.listaProductos .tituloListaProductos {
+    font-size: 4rem;
+    font-weight: bold;
+    font-style: italic;
+    display: inline-block;
+    padding: 3vh 2vw;
+    text-shadow: 0 0 10px black;
+}
+
+.listaProductos .productos {
+    width: 80%;
+    background-color: rgb(26, 44, 97);
+    border: 1px solid azure;
+    border-radius: 5px;
+}
+
+.listaProductos .productos button {
+    width: 100%;
+    font-size: 2rem;
+    text-align: center;
+    background-color: rgb(26, 44, 97);
+    border: 1px solid black;
+    border-radius: 5px;
+    padding: 10px 10px;
+    transition-property: background-color;
+    transition-duration: 0.2s;
+    text-shadow: 0 0 10px black;
+}
+
+.listaProductos .productos button:hover {
+    background-color: rgba(255, 255, 255, 0.4);
+}
+
+.carruselOfertas {
+    margin: 2vh 0vw;
+    grid-column: 2/3;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.caPerSlider {
+    width: 80%;
+    border: 2px solid azure;
+    border-radius: 5px;
+}
+
+.marcas {
+    grid-column: 1/3;
+    text-align: center;
+    width: 90%;
+    margin: 0px auto;
+    padding: 5vh 0vw;
+}
+
+.marcas p {
+    font-size: 3rem;
+    display: block;
+    padding-bottom: 3vh;
+    text-shadow: 0 0 10px black;
+    font-style: italic;
+}
+
+.marcasImgs {
+    display: flex;
+    justify-content: center;
+    gap: 50px;
+    flex-wrap: wrap;
+}
+
+.marcas img {
+    width: 10rem;
+    border: 1px solid azure;
+    display: inline-block;
+    transition-duration: 0.2s;
+    transition-property: width;
+}
+
+
+footer {
+    margin-top: auto;
+    display: flex;
+    text-shadow: 0 0 10px black;
+    background-color: rgb(21, 36, 83);
+    height: 30vh;
+    width: 100%;
+    justify-content: space-around;
+}
+
+footer img {
+    width: 6vw;
+}
+
+.sponsors {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+
+.sponsors p {
+    font-size: 2rem;
+    display: block;
+    padding: 2vh;
+    text-align: center;
+}
+
+.sponsorsImgs{
+    display: flex;
+    align-items: center;
+}
+
+.sponsorsImgs img {
+    padding: 1vh;
+}
+
+.linksFooter {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.linksFooter li {
+    display: inline-block;
+    padding: 1vw;
+}
+
+.linksFooter ul li a, .linksFooter p, .metodosDePago p {
+    color: azure;
+    text-decoration: none;
+    font-size: 2rem;
+}
+
+.metodosDePago {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+#seccionNosotros, #seccionOfertas, #seccionContacto, #seccionUbicacion {
+    padding: 20vh 0vw;
+}
+
+.nosotrosContenedor {
+    width: 90%;
+    margin: 20px auto;
+    height: auto;
+    border-radius: 10px;
+    background-color: rgba(16, 11, 59, 0.5);
+    border: 2px solid azure;
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.nosotrosTexto {
+    text-align: center;
+    display: flex;
+    flex-direction: column;align-items: center;
+    margin: 0px auto;
+}
+
+.nosotrosImg {
+    width: 50%;
+}
+
+.nosotrosImg img{
+    width: 100%;
+    margin: 5% 0%;
+    border-radius: 15px;
+    border: 1px solid azure;
+}
+
+.nosotrosTexto .texto{
+    display: inline-block;
+    text-shadow: 0 0 10px black;
+    width: 80%;
+    font-size: 2.5rem;
+}
+
+.nosotrosTextoTitulo {
+    display: inline-block;
+    text-shadow: 0 0 10px black;
+    font-size: 5rem;
+    padding: 2vh 0vw;
+}
+
+.seccionOfertasOfertaActual {
+    display: flex;
+    flex-direction: column;
+    padding: 5vh 0vw;
+    text-align: center;
+}
+
+.seccionOfertasOfertaActual p {
+    font-size: 5rem;
+    padding: 1vh 0;
+    text-shadow: 0 0 10px black;
+}
+
+.seccionOfertasOfertaActual img {
+    border: 1px solid azure;
+}
+
+.ofertas , .ofertaActual{
+    width: 80%;
+    margin: 20px auto;
+    height: auto;
+    border-radius: 10px;
+    background-color: rgba(16, 11, 59, 0.5);
+    border: 2px solid azure;
+    display: flex;
+    flex-direction: column;
+}
+
+.ofertas ul, .ofertaActual ul {
+    padding: 1vh;
+    display: flex;
+    justify-content: space-between;
+    align-content: space-between;
+    flex-wrap: wrap;
+    width: 80%;
+    margin: auto;
+}
+
+.ofertas ul img, .ofertaActual ul img {
+    width: 25rem;
+    transition-duration: 0.2s;
+    transition-property: width;
+}
+
+.ofertas ul img:hover, .ofertaActual ul img:hover {
+    width: 30rem;
+    box-shadow: 0px 0px 20px 0px azure;
+}
+
+.ofertas ul li, .ofertaActual ul li {
+    margin: 5vh auto;
+    transition-duration: 0.2s;
+    transition-property: width;
+}
+
+.seccionContacto {
+    width: 90%;
+    margin: 20px auto;
+    height: 70vh;
+    border-radius: 10px;
+    background-color: rgba(16, 11, 59, 0.5);
+    border: 2px solid azure;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.contactoFormulario {
+    width: 40%;
+    padding: 10px;
+}
+
+.contactoFormulario form {
+    width: 100%;
+}
+
+.contactoFormulario .contactoNombreApellido {
+    display: flex;
+    justify-content: center;
+}
+
+.contactoFormulario, .contactoImg {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.contactoFormulario p {
+    font-size: 3rem;
+    padding: 3vh 0;
+    text-shadow: 0 0 10px black;
+}
+
+.contactoFormulario input,
+.contactoFormulario textarea {
+    color:black;
+    font-size: 1.5rem;
+}
+
+.contactoFormulario .conFormNombre, 
+.contactoFormulario .conFormApellido{
+    width: 50%;
+    height: 5vh;
+}
+
+.contactoFormulario .conFormEmail, 
+.contactoFormulario .conFormMensaje{
+    width: 100%;
+    height: 5vh;
+    margin: 0.2vh 0vw;
+}
+
+.contactoFormulario .conFormMensaje {
+    display: inline-block;
+    height: 25vh;
+    resize: none;
+}
+
+.contactoImg img {
+    width: 80%;
+}
+
+.contactoImg p {
+    display: inline-block;
+    font-size: 2rem;
+    text-shadow: 0 0 10px black;
+    text-decoration: underline;
+}
+
+.seccionUbicacion {
+    width: 90%;
+    margin: 20px auto;
+    height: auto;
+    border-radius: 10px;
+    background-color: rgba(16, 11, 59, 0.5);
+    border: 2px solid azure;
+
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.ubicacionImg img{
+    width: 100%;
+}
+
+.ubicacionMapa iframe{
+    width: 100%;
+}
+
+
+.seccionUbicacion .ubicacionImg,
+.seccionUbicacion .ubicacionMapa {
+    display: inline-block;
+    text-align: center;
+    width: 40vw;
+}
+
+.ubicacionMapa .ubiInfo p{
+    font-size: 2rem;
+    padding: 1vh 0;
+    text-shadow: 0 0 10px black;
+    text-decoration: underline;
+}
+
+.ubiTitulo {
+    font-size: 3rem;
+    padding: 2vh 0;
+    text-shadow: 0 0 10px black;
+}
+
+
+@media screen and (min-width:890px) and (max-width: 1100px) {
+
+    footer {
+        margin-top: auto;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-shadow: 0 0 10px black;
+        background-color: rgb(21, 36, 83);
+        width: 100%;
+        height: 60vh;
+    }
+
+    footer img {
+        width: 10vw;
+    }
+
+    .seccionContacto {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .contactoFormulario {
+        width: 50%;
+    }
+
+}
+
+@media screen and (min-width: 709px) and (max-width: 889px) {
+
+    footer {
+        margin-top: auto;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-shadow: 0 0 10px black;
+        background-color: rgb(21, 36, 83);
+        width: 100%;
+        height: 60vh;
+    }
+
+    footer img {
+        width: 15vw;
+    }
+
+}
+
+@media screen and (min-width: 0px) and (max-width: 708px){
+
+    .mainDivInicio {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        align-content: space-between;
+        height: 100%;
+    }
+
+    .listaProductos {
+        align-self: flex-start;
+        width: 50%;
+    }
+
+    .carruselOfertas {
+        margin-top: 5vh;
+        padding: 5vh 0vw;
+        width: 90%;
+    }
+
+    .caPerSlider {
+        width: 100%;
+    }
+
+    .contactoFormulario p {
+        font-size: 2rem;
+    }
+
+    footer {
+        margin-top: auto;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-shadow: 0 0 10px black;
+        background-color: rgb(21, 36, 83);
+        width: 100%;
+        height: 60vh;
+    }
+
+    footer img {
+        width: 20vw;
+    }
+}
+
+@media screen and (max-width: 1100px) {
+
+    header {
+        display: flex;
+        width: 100%;
+        height: 15vh;
+        background-color: rgb(21, 36, 83);
+        border-bottom: 2px solid azure;
+        justify-content: space-evenly;
+        align-items: center;
+        position: fixed;
+    }
+    
+    header nav, header div, header .logo{
+        display: none;
+    }
+
+    header a {
+        width: auto;
+    }
+
+    header .logoResp {
+        display: inline-block;
+    }
+
+    .nosotrosTextoTitulo {
+        font-size: 3rem;
+    }
+
+    .nosotrosTexto .texto{
+        font-size: 2rem;
+    }
+
+    .nosotrosImg {
+        width: 80%;
+    }
+
+}
+
+@media screen and (max-width: 1200px) {
+
+    .nbButton {
+        margin-right: 10vw;
+    }
+
+    .nbCollapse.show, .nbCollapse.collapsing {
+        background-color: rgb(21, 36, 83);
+        border-bottom-style: solid;
+        border-color: azure;
+    }
+
+    .nbUl li {
+        padding: 15px 0px;
+    }
+
+    .nbSearch {
+        width: 50%;
+        margin: 15px 10px;
+    }
+
+    .seccionOfertasOfertaActual p {
+        font-size: 3rem;
+    }
+
+    .ofertas ul, .ofertaActual ul {
+        display: flex;
+        flex-direction: column;
+        align-content: center;
+        width: 100%;
+    } 
+
+    .ofertas ul li, .ofertaActual ul li {
+        width: 70%;
+    }
+
+    .ofertas ul li img, .ofertaActual ul li img{
+        width: 100%;
+    }
+    
+    .ofertas ul li img:hover, .ofertaActual ul li img:hover {
+        width: 100%;
+        box-shadow: 0px 0px 20px 0px azure;
+    }
+
+    .ofertas ul li:hover, .ofertaActual ul li:hover {
+        width: 75%;
+    }
+
+    .seccionContacto {
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .contactoFormulario p {
+        padding: 0px;
+        margin: 0px;
+    }
+
+    .contactoFormulario {
+        width: 80%;
+    }
+
+    .contactoImg {
+        width: 50%;
+    }
+
+    .seccionUbicacion {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .seccionUbicacion .ubicacionImg,
+    .seccionUbicacion .ubicacionMapa {
+        display: inline-block;
+        text-align: center;
+        width: 70vw;
+    }
+
+    .seccionUbicacion .ubicacionMapa {
+        width: 90vw;
+    }
+
+    .ubicacionMapa div iframe {
+        width: 90%;
+    }
+}

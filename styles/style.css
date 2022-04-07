@@ -173,8 +173,8 @@ main {
   padding: 10px 10px;
   -webkit-transition-property: background-color;
   transition-property: background-color;
-  -webkit-transition-duration: 0.2s;
-          transition-duration: 0.2s;
+  -webkit-transition-duration: 0.4s;
+          transition-duration: 0.4s;
   text-shadow: 0 0 10px black;
 }
 
@@ -202,6 +202,10 @@ main {
   width: 80%;
   border: 2px solid azure;
   border-radius: 5px;
+}
+
+.caPerSlider .carousel-inner img {
+  max-height: 70vh;
 }
 
 .marcas {
@@ -235,9 +239,18 @@ main {
 }
 
 .marcas img {
-  width: 15rem;
-  border: 2px solid azure;
+  margin: auto 0px;
+  max-width: 15rem;
   display: inline-block;
+  -webkit-transition-property: background-color;
+  transition-property: background-color;
+  -webkit-transition-duration: 0.4s;
+          transition-duration: 0.4s;
+}
+
+.marcas img:hover {
+  border-radius: 5px;
+  background-color: rgba(255, 255, 255, 0.6);
 }
 
 .seccionNosotros {
@@ -360,7 +373,7 @@ main {
   transition-property: width;
 }
 
-.seccionOfertas__ofertas ul img, .seccionOfertas__ofertaActual ul img {
+.seccionOfertas__ofertas ul li img, .seccionOfertas__ofertaActual ul li img {
   width: 25rem;
   -webkit-transition-duration: 0.2s;
           transition-duration: 0.2s;
@@ -369,7 +382,7 @@ main {
   border: 2px solid azure;
 }
 
-.seccionOfertas__ofertas ul img:hover, .seccionOfertas__ofertaActual ul img:hover {
+.seccionOfertas__ofertas ul li img:hover, .seccionOfertas__ofertaActual ul li img:hover {
   width: 30rem;
   -webkit-box-shadow: 0px 0px 20px 0px azure;
           box-shadow: 0px 0px 20px 0px azure;
@@ -848,4 +861,15 @@ footer .metodosDePago p {
     width: 90%;
   }
 }
+
+/*
+"liveSassCompile.settings.formats": [
+        {
+            "format": "expanded",
+            "extensionName": ".css",
+            "savePath": "~/../css/"
+        }
+    ]
+*/
+/*agregar esto a settings del live sass compiler, es un ajuste para que se establezca una ruta del css*/
 /*# sourceMappingURL=style.css.map */
