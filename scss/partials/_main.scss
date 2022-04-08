@@ -1,0 +1,116 @@
+@import "./maps";
+@import "../partials/extends";
+
+#seccionNosotros, #seccionOfertas, #seccionContacto, #seccionUbicacion {
+    padding: 20vh 0vw;
+}
+
+main {
+    padding-top: 25vh;
+}
+
+.mainDivInicio {
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+}
+
+.listaProductos {
+    grid-column: 1/2;
+    display: inline-block;
+    height: 100%;
+    text-align: center;
+
+    ul {
+        flex-direction: column;
+        margin: auto;
+        padding: 0%;
+        width: 15vw;
+    }
+
+    &__titulo {
+        font-size: 4rem;
+        font-weight: bold;
+        font-style: italic;
+        display: inline-block;
+        padding: 3vh 2vw;
+        text-shadow: 0 0 10px black;
+    }
+
+    &__productos {
+        width: 80%;
+        background-color: rgb(26, 44, 97);
+        border: map-get($general, border);
+        border-radius: 5px;
+
+        button {
+            width: 100%;
+            font-size: 2rem;
+            text-align: center;
+            background-color: rgb(26, 44, 97);
+            border: 1px solid black;
+            border-radius: 5px;
+            padding: 10px 10px;
+            transition-property: background-color;
+            transition-duration: 0.4s;
+            text-shadow: 0 0 10px black;
+
+            &:hover{
+                background-color: rgba(255, 255, 255, 0.4);
+            }
+
+        }
+
+    }
+
+}
+
+.carruselOfertas {
+    @extend %flexFCC;
+    margin: 2vh 0vw;
+    grid-column: 2/3;
+}
+
+.caPerSlider {
+    width: 80%;
+    border: map-get($general, border );
+    border-radius: 5px;
+    .carousel-inner {
+        img {
+            max-height: 70vh;
+        }
+    }
+}
+
+.marcas  {
+    grid-column: 1/3;
+    text-align: center;
+    width: 90%;
+    margin: 0px auto;
+    padding: 5vh 0vw;
+
+    p {
+        font-size: 3rem;
+        display: block;
+        padding-bottom: 3vh;
+        text-shadow: 0 0 10px black;
+        font-style: italic;
+    }
+    &__imgs{
+        display: flex;
+        justify-content: center;
+        gap: 50px;
+        flex-wrap: wrap;
+    }
+
+    img {
+        margin: auto 0px;
+        max-width: 15rem;
+        display: inline-block;
+        transition-property: background-color;
+        transition-duration: 0.4s;
+        &:hover {
+            border-radius: 5px;
+            background-color: rgba(255, 255, 255, 0.6);
+        }
+    }
+}

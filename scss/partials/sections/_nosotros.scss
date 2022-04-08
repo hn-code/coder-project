@@ -1,0 +1,44 @@
+@import "../extends";
+
+.seccionNosotros {
+    @extend %flexFCC;
+    flex-direction: column;
+    width: 90%;
+    margin: 20px auto;
+    height: auto;
+    border-radius: 10px;
+    background-color: rgba(16, 11, 59, 0.5);
+    border: map-get($general, border);
+    text-align: center;
+
+    &__info {
+        @extend %flexFCC;
+        flex-direction: column;
+        margin: 0px auto;
+
+        &__titulo {
+            display: inline-block;
+            text-shadow: 0 0 10px black;
+            font-size: 5rem;
+            padding: 2vh 0vw;
+        }
+
+        &__texto {
+            display: inline-block;
+            text-shadow: 0 0 10px black;
+            width: 80%;
+            font-size: 2.5rem;
+        }
+    }
+
+    &__img {
+        width: 50%;
+        img {
+            width: 100%;
+            margin: 5% 0%;
+            border-radius: 15px;
+            border: map-get($general, border);
+        }
+    }
+
+}

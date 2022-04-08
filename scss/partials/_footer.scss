@@ -1,0 +1,66 @@
+@import "./maps";
+@import "../partials/extends";
+
+footer {
+    margin-top: auto;
+    display: flex;
+    text-shadow: 0 0 10px black;
+    background-color: map-get($general, color-primary );
+    height: 30vh;
+    width: 100%;
+    justify-content: space-around;
+
+    img {
+        width: 6vw;
+    }
+
+    .sponsors {
+        @extend %flexFCC;
+        flex-direction: column;
+        p {
+            font-size: 2rem;
+            display: block;
+            padding: 2vh;
+            text-align: center;
+        }
+        &__imgs{
+            display: flex;
+            align-items: center;
+            img {
+                padding: 1vh;
+            }
+        }
+    }
+
+    .linksFooter {
+        @extend %flexFCC;
+        flex-direction: column;
+        ul {
+            li {
+    
+                display: inline-block;
+                padding: 1vw;
+                a {
+                    color: azure;
+                    text-decoration: none;
+                    font-size: 2rem;
+                }
+            }
+        }
+        p {
+            color: azure;
+            text-decoration: none;
+            font-size: 2rem;
+        }
+    }
+
+    .metodosDePago { 
+        @extend %flexFCC;
+        flex-direction: column;
+        p {
+            color: azure;
+            text-decoration: none;
+            font-size: 2rem;
+        }
+    }
+}
