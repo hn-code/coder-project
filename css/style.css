@@ -222,7 +222,8 @@ main {
 
 .marcas img {
   margin: auto 0px;
-  max-width: 15rem;
+  width: 12.5rem;
+  height: 8rem;
   display: inline-block;
   -webkit-transition-property: background-color;
   transition-property: background-color;
