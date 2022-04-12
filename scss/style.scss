@@ -28,3 +28,7 @@ body {
     @include flex (flex, baseline, center);
     flex-direction: column;
 }
+
+.d_n {
+    display: none;
+}
