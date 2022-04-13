@@ -186,8 +186,13 @@ main {
   border-radius: 5px;
 }
 
+.caPerSlider .carousel-inner {
+  background-color: white;
+}
+
 .caPerSlider .carousel-inner img {
-  max-height: 70vh;
+  height: 70vh;
+  margin: auto;
 }
 
 .marcas {
@@ -388,16 +393,18 @@ footer .metodosDePago p {
 }
 
 .seccionOfertas__ofertas ul li img, .seccionOfertas__ofertaActual ul li img {
-  width: 25rem;
+  width: 256px;
+  height: 193px;
   -webkit-transition-duration: 0.2s;
           transition-duration: 0.2s;
-  -webkit-transition-property: width;
-  transition-property: width;
+  -webkit-transition-property: width, height;
+  transition-property: width, height;
   border: 2px solid azure;
 }
 
 .seccionOfertas__ofertas ul li img:hover, .seccionOfertas__ofertaActual ul li img:hover {
-  width: 30rem;
+  width: 300px;
+  height: 225px;
   -webkit-box-shadow: 0px 0px 20px 0px azure;
           box-shadow: 0px 0px 20px 0px azure;
 }
@@ -746,38 +753,6 @@ footer .metodosDePago p {
     width: 50%;
     margin: 15px 10px;
   }
-  .seccionOfertas__ofertas p, .seccionOfertas__ofertaActual p {
-    font-size: 3rem;
-  }
-  .seccionOfertas__ofertas ul, .seccionOfertas__ofertaActual ul {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
-    -ms-flex-line-pack: center;
-        align-content: center;
-    width: 100%;
-  }
-  .seccionOfertas__ofertas ul li, .seccionOfertas__ofertaActual ul li {
-    width: 70%;
-  }
-  .seccionOfertas__ofertas ul li img, .seccionOfertas__ofertaActual ul li img {
-    width: 100%;
-  }
-  .seccionOfertas__ofertas ul li img:hover, .seccionOfertas__ofertaActual ul li img:hover {
-    width: 100%;
-    -webkit-box-shadow: 0px 0px 20px 0px azure;
-            box-shadow: 0px 0px 20px 0px azure;
-  }
-  .seccionOfertas__ofertas ul li:hover, .seccionOfertas__ofertaActual ul li:hover {
-    width: 75%;
-  }
   .seccionContacto {
     height: 100%;
     display: -webkit-box;
@@ -823,6 +798,31 @@ footer .metodosDePago p {
   }
   .seccionUbicacion__mapa div iframe {
     width: 90%;
+  }
+}
+
+@media screen and (max-width: 1350px) {
+  .seccionOfertas__ofertas ul li, .seccionOfertas__ofertaActual ul li {
+    margin: 5vh auto;
+    -webkit-transition-duration: 0.2s;
+            transition-duration: 0.2s;
+    -webkit-transition-property: width;
+    transition-property: width;
+  }
+  .seccionOfertas__ofertas ul li img, .seccionOfertas__ofertaActual ul li img {
+    width: 270px;
+    height: 204px;
+    -webkit-transition-duration: 0.2s;
+            transition-duration: 0.2s;
+    -webkit-transition-property: width, height;
+    transition-property: width, height;
+    border: 2px solid azure;
+  }
+  .seccionOfertas__ofertas ul li img:hover, .seccionOfertas__ofertaActual ul li img:hover {
+    width: 320px;
+    height: 242px;
+    -webkit-box-shadow: 0px 0px 20px 0px azure;
+            box-shadow: 0px 0px 20px 0px azure;
   }
 }
 

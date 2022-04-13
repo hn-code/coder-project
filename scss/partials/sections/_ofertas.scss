@@ -33,13 +33,16 @@
                 transition-duration: 0.2s;
                 transition-property: width;
                 img {
-                    width: 25rem;
+                    width: 256px;
+                    height: 193px;
                     transition-duration: 0.2s;
-                    transition-property: width;
+                    transition-property: width, height;
                     border: map-get($general, border);
                     &:hover {
-                        width: 30rem;
+                        width: 300px;
+                        height: 225px;
                         box-shadow: 0px 0px 20px 0px azure;
+                        
                     }
                 }
             }            
