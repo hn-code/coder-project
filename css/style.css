@@ -191,7 +191,6 @@ main {
 }
 
 .caPerSlider .carousel-inner img {
-  height: 70vh;
   margin: auto;
 }
 
@@ -729,17 +728,47 @@ footer .metodosDePago p {
 }
 
 @media screen and (max-width: 1200px) {
+  .nbHeader {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
   .nbHeader .logo {
     display: none;
   }
   .nbHeader a {
     width: auto;
   }
-  .nbHeader .logoResp {
+  .nbHeader .nbBrand {
+    max-width: 60%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .nbHeader .nbBrand .logoResp {
     display: inline-block;
+    max-width: 100%;
+    max-height: 100%;
+    width: auto;
+    height: auto;
   }
   .nbButton {
     margin-right: 10vw;
+  }
+  .nbButton img {
+    max-width: 50px;
+    max-height: 50px;
+    width: auto;
+    height: auto;
   }
   .nbCollapse.show, .nbCollapse.collapsing {
     background-color: #152453;
@@ -767,14 +796,17 @@ footer .metodosDePago p {
             align-items: center;
   }
   .seccionContacto__formulario {
-    width: 80%;
+    width: 100%;
   }
   .seccionContacto__formulario p {
     padding: 0px;
     margin: 0px;
   }
   .seccionContacto__img {
-    width: 50%;
+    width: 80%;
+  }
+  .seccionContacto__img p {
+    text-align: center;
   }
   .seccionUbicacion {
     display: -webkit-box;
@@ -788,39 +820,58 @@ footer .metodosDePago p {
         -ms-flex-align: center;
             align-items: center;
   }
+  .seccionUbicacion {
+    width: 100%;
+  }
   .seccionUbicacion__img, .seccionUbicacion__mapa {
     display: inline-block;
     text-align: center;
     width: 70vw;
   }
   .seccionUbicacion__mapa {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
     width: 90vw;
   }
+  .seccionUbicacion__mapa div {
+    width: 100%;
+  }
   .seccionUbicacion__mapa div iframe {
-    width: 90%;
+    width: 100%;
+  }
+  .seccionUbicacion__mapa__info {
+    width: 50%;
   }
 }
 
 @media screen and (max-width: 1350px) {
+  #seccionNosotros, #seccionOfertas, #seccionContacto, #seccionUbicacion {
+    width: 95%;
+  }
+  .seccionOfertas__ofertas, .seccionOfertas__ofertaActual {
+    width: 90%;
+  }
   .seccionOfertas__ofertas ul li, .seccionOfertas__ofertaActual ul li {
-    margin: 5vh auto;
-    -webkit-transition-duration: 0.2s;
-            transition-duration: 0.2s;
-    -webkit-transition-property: width;
-    transition-property: width;
+    width: 100%;
   }
   .seccionOfertas__ofertas ul li img, .seccionOfertas__ofertaActual ul li img {
-    width: 270px;
-    height: 204px;
-    -webkit-transition-duration: 0.2s;
-            transition-duration: 0.2s;
-    -webkit-transition-property: width, height;
-    transition-property: width, height;
-    border: 2px solid azure;
+    width: 90%;
+    height: auto;
   }
   .seccionOfertas__ofertas ul li img:hover, .seccionOfertas__ofertaActual ul li img:hover {
-    width: 320px;
-    height: 242px;
+    width: 100%;
+    height: auto;
     -webkit-box-shadow: 0px 0px 20px 0px azure;
             box-shadow: 0px 0px 20px 0px azure;
   }
