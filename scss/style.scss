@@ -23,7 +23,7 @@
 }
 
 body {
-    background: linear-gradient(90deg, rgb(3, 21, 70) 0%, rgb(43, 82, 191) 50%, rgb(3, 21, 70) 100%);
+    background: linear-gradient(90deg, rgb(3, 20, 67) 5%, rgb(96, 136, 245) 50%, rgb(3, 20, 67) 95%);
     min-height: 100vh;
     @include flex (flex, baseline, center);
     flex-direction: column;
